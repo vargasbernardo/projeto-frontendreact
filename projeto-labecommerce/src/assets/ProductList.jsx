@@ -2,7 +2,7 @@ export const produtos = [
     {
       id: 1,
       name: "Lian-li",
-      value: "10000.0",
+      value: "10",
       imageUrl: "https://picsum.photos/300/335?a=1"
     },
     {
