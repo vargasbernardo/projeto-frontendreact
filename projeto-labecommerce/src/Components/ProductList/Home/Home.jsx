@@ -34,6 +34,7 @@ const Home = (props) => {
           handleClick={props.handleClick}
           maxFilter={props.maxFilter}
           searchFilter={props.searchFilter}
+          minFilter={props.minFilter}
         />
     </HomeContainer>
   );

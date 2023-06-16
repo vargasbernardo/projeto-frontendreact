@@ -11,7 +11,7 @@ const ShoppingCart = (props) => {
   return (
     <CartContainer>
         <h3>Carrinho</h3>
-        <Itens cart={props.itemsCart} cartProducts={props.cartProducts}/>
+        <Itens amount={props.amount}cart={props.itemsCart} cartProducts={props.cartProducts} deleteItem={props.deleteItem}/>
     </CartContainer>
   )
 }

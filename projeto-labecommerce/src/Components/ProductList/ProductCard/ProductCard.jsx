@@ -1,7 +1,6 @@
 import { CardContainer } from "./ProductCardStyle";
 
 const ProductCard = (props) => {
-  console.log(props)
   const productData = props.produtos
   .filter(element => {
     return element.name.toLowerCase().includes(props.searchFilter.toLowerCase())
@@ -33,7 +32,7 @@ const ProductCard = (props) => {
 
             <p>R$ {element.value}</p>
            
-            <button onClick={props.handleClick}>Adicionar ao carrinho</button>
+            <button onClick={() => props.handleClick(element)}>Adicionar ao carrinho</button>
           </span>
         </div>
         

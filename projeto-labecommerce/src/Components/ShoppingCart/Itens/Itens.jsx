@@ -8,9 +8,9 @@ const cartProducts = props.cart.map((element, index) => {
   // console.log(element)
   return (
         <div key={index}>
-          <p> 0x {element.name}</p> 
+          <p> {element.quantity}x {element.name}</p> 
          
-          <button type="button">Remover</button>
+          <button onClick={() => props.deleteItem(element)}type="button">Remover</button>
         </div>
         
     )
@@ -19,7 +19,7 @@ const cartProducts = props.cart.map((element, index) => {
   return (
     <div>
       {cartProducts}
-      <p>Valor Total: 0</p>
+      <p>Valor Total: {props.amount}</p>
     </div>
   )
 }
