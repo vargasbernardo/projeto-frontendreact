@@ -2,6 +2,7 @@ import React from 'react'
 import Filters from './Components/Filters/Filters'
 import Home from './Components/ProductList/Home/Home.jsx'
 import ShoppingCart from './Components/ShoppingCart/ShoppingCart'
+import PaginaInicial from "./Components/PaginaInicial/PaginaInicial"
 import { produtos } from './assets/ProductList'
 import { MainContainer } from './AppStyle'
 
@@ -11,6 +12,7 @@ function App() {
   const [searchFilter, setSearchFilter] = React.useState('')
   const [cart, setCart] = React.useState([])
   const [amount, setAmount] = React.useState(0)
+  const [isInStore, setIsInStore] = React.useState(false)
 
     console.log(maxFilter, minFilter, searchFilter)
 
@@ -53,8 +55,11 @@ function App() {
     }
 
   return (
-    <MainContainer>
-      <Filters 
+    <>
+    
+      {isInStore ? 
+      <MainContainer> 
+        <Filters 
         minFilter={minFilter}
         setMinFilter={setMinFilter}
         maxFilter={maxFilter}
@@ -74,7 +79,13 @@ function App() {
         deleteItem={deleteItem}
         amount={amount}
       />
-    </MainContainer>
+      </MainContainer> 
+      : 
+      <PaginaInicial setIsInStore={setIsInStore}/>
+    }
+      
+    </>
+    
   )
 }
 
