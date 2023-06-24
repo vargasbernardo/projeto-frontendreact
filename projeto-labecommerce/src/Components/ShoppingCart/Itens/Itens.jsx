@@ -19,7 +19,7 @@ const cartProducts = props.cart.map((element, index) => {
   return (
     <div>
       {cartProducts}
-      <p>Valor Total: {props.amount}</p>
+      <p>Valor Total: R$ {props.amount}</p>
     </div>
   )
 }

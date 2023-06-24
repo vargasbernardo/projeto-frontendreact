@@ -14,7 +14,25 @@ function App() {
   const [amount, setAmount] = React.useState(0)
   const [isInStore, setIsInStore] = React.useState(false)
 
-    console.log(maxFilter, minFilter, searchFilter)
+
+    React.useEffect(() => {
+      if(cart.length > 0) {
+        const saveToLocalStorage = JSON.stringify(cart)
+        localStorage.setItem("lista", saveToLocalStorage);
+
+      }
+      
+    }, [cart])
+    React.useEffect(() => {
+      const getItems = JSON.parse(localStorage.getItem("lista"))
+      console.log(getItems)
+      if (getItems !== null) {
+        setCart(getItems)
+        const savedTotal = getItems.reduce((total, item) => total + Number(item.value), 0)
+        setAmount(savedTotal)
+
+      }
+    }, [])
 
     function handleClick(product) {
       const existingProduct = cart.find(item => item.id === product.id);
@@ -32,6 +50,7 @@ function App() {
         setCart([...cart, {...product, quantity: 1}]);
       }
       setAmount(prevAmount =>  prevAmount + Number(product.value))
+      
     }
   
     function deleteItem(product) {
