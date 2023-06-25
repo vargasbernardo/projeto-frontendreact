@@ -15,7 +15,7 @@ const Home = (props) => {
   return (
     <HomeContainer>
       <HomeHeader>
-        <h1>Space Themed E-Commerce</h1>
+        <h1>Labecommerce</h1>
         <p>Quantidade de produtos:{props.produtos.length}</p>
         <span>
           <p>Ordenação</p>

@@ -2,10 +2,9 @@ import styled from 'styled-components'
 
 
 export const FilterStyle = styled.form`
-    border-right: 1px solid black;
     display: flex;
     flex-direction: column;
-    width: 10vw;
+    width: 7vw;
     padding: 1em;
     font-size: 12px;
     color: var(--primary-font-color);
@@ -16,6 +15,11 @@ export const FilterStyle = styled.form`
 
     label {
       margin-top: 1em;
+    }
+    img {
+      width: 42px;
+      height: 32px;
+      cursor: pointer;
     }
 
   `

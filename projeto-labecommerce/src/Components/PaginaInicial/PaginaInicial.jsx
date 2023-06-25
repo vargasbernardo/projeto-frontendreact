@@ -7,9 +7,9 @@ export default function PaginaInicial(props) {
     }
     return (
         <InitialContainer>
-            <h1>Essa eh a pagina inicial</h1>
-            <h3>Clique no botao para entrar na loja e ver nossos produtos!</h3>
-            <button onClick={getInStore}>CLickCLick</button>
+            <h1>Bem-vindo(a) a <span>Labecommerce</span></h1>
+            <h3>O seu destino intergaláctico para brinquedos e artigos infantis temáticos de espaço! Aqui, você encontrará uma ampla seleção de produtos emocionantes que trazem a magia e a maravilha do universo para crianças de todas as idades. Clique no botao e navegue pelo nosso site para descobrir uma infinidade de opções que vão encantar tanto pequenos astronautas em treinamento quanto curiosos exploradores espaciais</h3>
+            <button onClick={getInStore}>Clique aqui!</button>
         
         </InitialContainer>
         

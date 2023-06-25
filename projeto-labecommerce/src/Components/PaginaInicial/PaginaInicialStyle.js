@@ -3,8 +3,8 @@ import newImage from '../../assets/images/newImage.jpg'
 
 
 const InitialContainer = styled.div`
-    color: #2A2928;
-    text-shadow: 1px 1px 5px #D9D9D9;
+    color: #E0AA5C;
+    text-shadow: 1px 1px 5px black;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -20,9 +20,17 @@ const InitialContainer = styled.div`
         cursor: pointer;
         font-weight: bold;
         border: none;
-        background-color: #EBF3F5;
+        background-color: #918E94;
         border-radius: 5px;
         margin-top: 20px;
+        color: var(--primary-font-color)
+    }
+    h3 {
+        max-width: 600px;
+        font-size: 12px;
+    }
+    span {
+        font-family: 'Rubik Moonrocks';
     }
 
 `

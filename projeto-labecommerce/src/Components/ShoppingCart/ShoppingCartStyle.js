@@ -1,7 +1,6 @@
 import styled from 'styled-components'
 
 export const CartContainer = styled.div`
-    border-left: 1px solid black;
     width: 10vw;
     display: flex;
     flex-direction: column;
@@ -21,6 +20,12 @@ export const CartContainer = styled.div`
         font-size: 12px;
     }
     p {
+        margin-top: 10px;
+    }
+    img {
+        width: 32px;
+        height: 32px;
+        cursor: pointer;
         margin-top: 10px;
     }
    

@@ -13,10 +13,11 @@ export const CardContainer = styled.div`
     
 
     img {
-      width: 100%;
+      width: 260px;
+      height: 300px;
       cursor: pointer;
-      align-self: center;
       transition: transform 0.3s ease;
+      
     }
     
 

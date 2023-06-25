@@ -20,7 +20,7 @@ function App() {
         const saveToLocalStorage = JSON.stringify(cart)
         localStorage.setItem("lista", saveToLocalStorage);
 
-      }
+      } 
       
     }, [cart])
     React.useEffect(() => {
@@ -30,7 +30,6 @@ function App() {
         setCart(getItems)
         const savedTotal = getItems.reduce((total, item) => total + Number(item.value), 0)
         setAmount(savedTotal)
-
       }
     }, [])
 
