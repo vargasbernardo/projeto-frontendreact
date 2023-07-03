@@ -1,11 +1,10 @@
 import { FilterStyle } from "./FiltersStyle";
-import sandwichIcon from "../../assets/Icons/sandwichIcon.png";
 import React from "react";
+import {FaFilter} from 'react-icons/fa'
 
 const Filters = (props) => {
   // console.log(props)
   const [filterModal, setFilterModal] = React.useState(false);
-  console.log(filterModal);
 
   function handleModalOpen() {
     setFilterModal((prevState) => !prevState);
@@ -13,7 +12,7 @@ const Filters = (props) => {
 
   return (
     <FilterStyle>
-      <img src={sandwichIcon} onClick={handleModalOpen} />
+      <FaFilter onClick={handleModalOpen} />
 
       {filterModal && (
         <>

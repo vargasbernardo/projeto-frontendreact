@@ -1,9 +1,9 @@
-import { createGlobalStyle } from 'styled-components'
-
+import { createGlobalStyle } from "styled-components";
 
 const GlobalStyles = createGlobalStyle`
     :root {
         --primary-font-color: #ECEEF3;
+        --primary-dark-color: #2B2B2B
     }
     * {
         margin: 0;
@@ -19,5 +19,5 @@ const GlobalStyles = createGlobalStyle`
 
 
 
-`
-export default GlobalStyles
+`;
+export default GlobalStyles;
