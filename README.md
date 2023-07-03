@@ -8,6 +8,8 @@ O carrinho de compras é funcional, permitindo que os usuários adicionem itens 
 
 Ao entrar na página, os usuários são recebidos com uma página inicial contendo um botão para "entrar" na loja. O estado do botão de entrada é controlado no código. As áreas de filtro e carrinho também são controladas por estados e têm renderização condicional.
 
+link do deploy - https://effervescent-kulfi-a8ddcf.netlify.app/
+
 Recursos
 Filtros de valor máximo e mínimo.
 Busca por nome de produto.
