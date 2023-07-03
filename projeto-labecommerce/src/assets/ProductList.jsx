@@ -29,7 +29,7 @@ export const produtos = [
   },
   {
     id: 5,
-    name: "Queens",
+    name: "Astronauta LEGO laranja",
     value: "79",
     imageUrl:
       "https://images.unsplash.com/photo-1526572202046-8b87644dce4a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
@@ -50,7 +50,7 @@ export const produtos = [
   },
   {
     id: 8,
-    name: "Wall-e",
+    name: "Chibi Astronauta",
     value: "150",
     imageUrl:
       "https://images.unsplash.com/photo-1610373678149-39e72f4f7e52?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
@@ -64,7 +64,7 @@ export const produtos = [
   },
   {
     id: 10,
-    name: "Bollocks",
+    name: "Estatueta Astronauta",
     value: "69",
     imageUrl:
       "https://images.unsplash.com/photo-1653179767384-e2ef2381d499?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=784&q=80",
