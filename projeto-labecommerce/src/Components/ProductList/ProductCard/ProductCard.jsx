@@ -4,21 +4,21 @@ import { CardContainer } from "./ProductCardStyle";
 
 
 const ProductCard = (props) => {
+  console.log(typeof props.minFilter)
+  console.log(typeof props.maxFilter)
+  
   const productData = props.produtos
     .filter((element) => {
+      console.log(typeof element.value)
       return element.name
         .toLowerCase()
         .includes(props.searchFilter.toLowerCase());
     })
     .filter((element) => {
-      return props.minFilter
-        ? element.value.includes(props.minFilter)
-        : element;
+      return props.minFilter ? Number(element.value) >= Number(props.minFilter) : true;
     })
     .filter((element) => {
-      return props.maxFilter
-        ? element.value.includes(props.maxFilter)
-        : element;
+      return props.maxFilter ? Number(element.value) <= Number(props.maxFilter) : true;
     })
     .sort((a, b) => {
       if (props.ordination === "Crescente") {
